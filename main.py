@@ -10,4 +10,4 @@ from io import StringIO
 csv_data = StringIO(content)
 
 df_base = pd.read_csv(csv_data)
-print(df_base.head())
+print(df_base.tail())
