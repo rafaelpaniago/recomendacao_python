@@ -10,4 +10,15 @@ from io import StringIO
 csv_data = StringIO(content)
 
 df_base = pd.read_csv(csv_data)
-print(df_base.tail())
+
+# Ajustar nome das colunas
+
+df_base = df_base.rename(columns={'InvoiceNo':'numero_fatura'})
+df_base = df_base.rename(columns={'StockCode':'codigo_estoque'})
+df_base = df_base.rename(columns={'Description':'descricao'})
+df_base = df_base.rename(columns={'Quantity':'quantidade'})
+df_base = df_base.rename(columns={'InvoiceDate':'data_fatura'})
+df_base = df_base.rename(columns={'Unitprice':'preco_unidade'})
+df_base = df_base.rename(columns={'CustomerID':'id_cliente'})
+
+df_base.info()
