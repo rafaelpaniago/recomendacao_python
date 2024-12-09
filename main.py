@@ -18,7 +18,15 @@ df_base = df_base.rename(columns={'StockCode':'codigo_estoque'})
 df_base = df_base.rename(columns={'Description':'descricao'})
 df_base = df_base.rename(columns={'Quantity':'quantidade'})
 df_base = df_base.rename(columns={'InvoiceDate':'data_fatura'})
-df_base = df_base.rename(columns={'Unitprice':'preco_unidade'})
+df_base = df_base.rename(columns={'UnitPrice':'preco_unidade'})
 df_base = df_base.rename(columns={'CustomerID':'id_cliente'})
+df_base = df_base.rename(columns={'Country':'nome_pais'})
 
-df_base.info()
+# Ajustar o tipo de dado
+
+# Isso aqui encontra os valores nulos e transforma em zero. Em seguida muda o tipo de dado para inteiro e depois object.
+df_base['id_cliente'] = df_base['id_cliente'].fillna(0).astype('int').astype('object')
+
+
+
+
