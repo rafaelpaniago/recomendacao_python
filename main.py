@@ -28,5 +28,13 @@ df_base = df_base.rename(columns={'Country':'nome_pais'})
 df_base['id_cliente'] = df_base['id_cliente'].fillna(0).astype('int').astype('object')
 
 
+# Isso aqui transforma object em data
+df_base['data_fatura'] = pd.to_datetime(df_base['data_fatura'])
+
+
+print(df_base.head())
+
+
+
 
 
