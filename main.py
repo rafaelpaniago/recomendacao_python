@@ -31,8 +31,8 @@ df_base['id_cliente'] = df_base['id_cliente'].fillna(0).astype('int').astype('ob
 # Isso aqui transforma object em data
 df_base['data_fatura'] = pd.to_datetime(df_base['data_fatura'])
 
-
-print(df_base.head())
+if __name__ == "__main__":
+    print(df_base.head())
 
 
 
