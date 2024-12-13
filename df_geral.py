@@ -30,4 +30,4 @@ df_base= df_base.dropna() # Atualiza o DF para não ter valores ausentes, nulos.
 df_base['descricao'] = df_base['descricao'].fillna(0) # Troca os valores nulos por zero.
 
 
-# 4
+# 1
