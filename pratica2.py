@@ -3,11 +3,10 @@ import pandas as pd
 
 # EXPLORAÇÃO DE DADOS
 # Exibir informações gerais do df_base
-print(df_base.info())
 
 
 # Exibir tipo de dados das colunas.
-print(df_base.dtypes)
+
 
 
 # Exibe n linhas iniciais do dataframe.
@@ -51,8 +50,8 @@ print(df_base.dtypes)
 # Soma valores de uma coluna.
 
 
-
 # Retorna correlação entre colunas numéricas.
+
 
 
 # ---- FILTROS BÁSICOS
@@ -64,6 +63,7 @@ print(df_base.dtypes)
 
 
 # ---- REMOVER VALORES AUSENTES (not available)
+
 
 # Atualiza o dataframe para não ter valores ausentes, nulos.
 

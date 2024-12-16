@@ -28,6 +28,3 @@ print(df_base.sort_values(by='preco_unidade', ascending=False)) # Ordena com bas
 # REMOVER VALORES AUSENTES
 df_base= df_base.dropna() # Atualiza o DF para não ter valores ausentes, nulos.
 df_base['descricao'] = df_base['descricao'].fillna(0) # Troca os valores nulos por zero.
-
-
-# 1
