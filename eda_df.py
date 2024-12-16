@@ -1,15 +1,8 @@
 ## Importar DF do arquivo main
 from main import df_base
 
-## Ver informações do df
-# df_base.info()
+df_base_new = df_base.dropna()
+print(df_base_new.info())
 
-## Verificar quantidade de linhas e colunas
-# print(df_base.shape)
+# O dataframe sem valores nulos é df_base_new
 
-## Ver nomes das colunas e tipos de dados
-print(df_base.columns)
-# print(df_base.dtypes)
-
-## Verificar valores nulos
-# print(df_base.head())
