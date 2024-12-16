@@ -3,9 +3,11 @@ import pandas as pd
 
 # EXPLORAÇÃO DE DADOS
 # Exibir informações gerais do df_base
+print(df_base.info())
 
 
 # Exibir tipo de dados das colunas.
+print(df_base.dtypes)
 
 
 # Exibe n linhas iniciais do dataframe.
